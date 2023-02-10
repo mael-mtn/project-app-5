@@ -1,0 +1,113 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  min-height: 50px;
+  padding:  0.5rem 1rem;
+  background-color: #ffffff;
+  color: aliceblue;
+  z-index: 99999;
+}
+
+.navbarLinks {
+  display: flex;
+}
+
+.navbarLink {
+  padding: 0 0.3rem;
+  color: inherit;
+}
+
+.navbarBurger {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    height: 74px;
+  }
+
+  .navbarLinks {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 0;
+    right: -100vw;
+    bottom: 0;
+    height: 100vh;
+    visibility: hidden;
+    background-color: #2ec7d3;
+    transition: all 0.8s ease-in-out;
+  }
+
+  .showNav .navbarLinks {
+    width: 60vw;
+    right: 0;
+    visibility: visible;
+  }
+
+  .navbarLink {
+    display: block;
+    padding: 1.5rem;
+    font-size: 7vw;
+  }
+
+  .navbarBurger {
+    display: block;
+    position: fixed;
+    top: 1.5rem;
+    right: 1rem;
+  }
+
+  .burger-bar,
+  .burger-bar::before,
+  .burger-bar::after {
+    display: block;
+    width: 40px;
+    height: 3px;
+    position: relative;
+    border-radius: 3px;
+    background: #000;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .burger-bar::before,
+  .burger-bar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+
+  .burger-bar::before {
+    transform: translateY(-12px);
+  }
+
+  .burger-bar::after {
+    transform: translateY(12px);
+  }
+
+  .showNav .burger-bar {
+    width: 0;
+    background: transparent;
+  }
+
+  .showNav .burger-bar::before {
+    transform: rotate(45deg);
+    background: #fff;
+  }
+
+  .showNav .burger-bar::after {
+    transform: rotate(-45deg);
+    background: #fff;
+  }
+}

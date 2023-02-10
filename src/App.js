@@ -1,24 +1,71 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { motion } from "framer-motion";
+import { useState, useRef, useEffect } from "react";
+import Header from "./Components/Header/Header";
+import Propert from "./Components/Cards/CardsLogement/Propert";
+import CardsEmploi from "./Components/Cards/CardsEmploi/CardsEmploi";
+import CardsAide from "./Components/Cards/CardsAide/CardsAide";
 
 function App() {
+  const [width, setWidth] = useState(0);
+  const carousel = useRef();
+
+  useEffect(() => {
+    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <main>
+      <Header />
+
+      <motion.div
+        ref={carousel}
+        className="carousel"
+        whileTap={{ cursor: "grabbing" }}
+      >
+        <motion.div
+          drag="x"
+          dragConstraints={{ right: 0, left: -width }}
+          className="inner-Carousel"
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <motion.div className="item">
+            <Propert className="propert" />
+          </motion.div>
+        </motion.div>
+      </motion.div>
+
+      <motion.div
+        ref={carousel}
+        className="carousel"
+        whileTap={{ cursor: "grabbing" }}
+      >
+        <motion.div
+          drag="x"
+          dragConstraints={{ right: 0, left: -width }}
+          className="inner-Carousel"
+        >
+          <motion.div className="item">
+            <CardsEmploi className="emploi"/>
+          </motion.div>
+        </motion.div>
+      </motion.div>
+
+      <motion.div
+        ref={carousel}
+        className="carousel"
+        whileTap={{ cursor: "grabbing" }}
+      >
+        <motion.div
+          drag="x"
+          dragConstraints={{ right: 0, left: -width }}
+          className="inner-Carousel"
+        >
+          <motion.div className="item">
+            <CardsAide className="aide"/>
+          </motion.div>
+        </motion.div>
+      </motion.div>
+    </main>
   );
 }
 
