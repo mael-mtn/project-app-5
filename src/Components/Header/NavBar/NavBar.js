@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./NavBar.css";
 import logoMDS from "../../../Images/svg/logoMDS.svg";
 
+
 export default function NavBar() {
   const [showLinks, setShowLinks] = useState(false);
 
@@ -21,17 +22,17 @@ export default function NavBar() {
         </li>
         <li className="navbarItem">
           <a href="/" className="navbarLink">
-            Logement
+            Logements
           </a>
         </li>
         <li className="navbarItem">
           <a href="/" className="navbarLink">
-            Emploi
+            Emplois
           </a>
         </li>
         <li className="navbarItem">
           <a href="/" className="navbarLink">
-            Aide
+            Aides
           </a>
         </li>
         <li className="navbarItem">

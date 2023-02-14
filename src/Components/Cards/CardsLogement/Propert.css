@@ -83,6 +83,7 @@
   color: black;
   opacity: 30%;
   margin-bottom: 6px;
+  font-family: "Regular";
 }
 
 .mark-logement {
@@ -95,6 +96,7 @@
   font-size: 13px;
   font-weight: 400;
   color: #919191;
+  font-family: "Regular";
 }
 
 .mark-logement .amount {

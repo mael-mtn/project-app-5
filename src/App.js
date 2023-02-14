@@ -5,7 +5,7 @@ import Header from "./Components/Header/Header";
 import Propert from "./Components/Cards/CardsLogement/Propert";
 import CardsEmploi from "./Components/Cards/CardsEmploi/CardsEmploi";
 import CardsAide from "./Components/Cards/CardsAide/CardsAide";
-import SearchBar from"./Components/searchBar/SearchBar";
+import SearchBar from "./Components/searchBar/SearchBar";
 
 function App() {
   const [width, setWidth] = useState(0);
@@ -22,7 +22,6 @@ function App() {
       <section className="profil">
         <div className="presentation">
           <div class="circular--portrait">
-            {" "}
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzHQv_th9wq3ivQ1CVk7UZRxhbPq64oQrg5Q&usqp=CAU"
               width={"100%"}
@@ -47,7 +46,6 @@ function App() {
           <h3>Logements</h3>
           <span>Voir plus (nb)</span>
         </div>
-
         <motion.div
           drag="x"
           dragConstraints={{ right: 0, left: -width }}

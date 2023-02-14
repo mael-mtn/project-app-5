@@ -89,6 +89,7 @@
   width: 100%;
   display: flex;
   justify-content: end;
+  font-family: "Regular";
 }
 
 .cat-aide {
