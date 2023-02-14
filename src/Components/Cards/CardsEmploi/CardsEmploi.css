@@ -1,9 +1,3 @@
-.item {
-  min-height: 4rem;
-  width: 100%;
-  padding: 15px;
-}
-
 .inner-carousel {
   display: flex;
 }
@@ -14,27 +8,37 @@
 }
 
 .emploi {
-  padding-top: 9rem;
-  padding-bottom: 1rem;
+  padding-top: 1rem;
   display: grid;
-  place-items: center;
 }
 
-.center h3 {
+.left-emploi {
+  padding: 0rem 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-emploi h3 {
   font-size: 42px;
   font-weight: 500;
   color: #001d38;
 }
 
+.left-emploi span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .row {
-  padding-top: 4rem;
   display: flex;
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr; */
 }
 
 .single-emploi {
-  width: 350px;
+  width: 153px;
+  height: 153px;
   border-radius: 1rem;
   box-shadow: 0 5px 15px rgb(0 0 0 / 5%);
   margin-bottom: 30px;
@@ -43,7 +47,6 @@
 }
 
 .column-emploi {
-  padding-left: 1rem;
   padding-right: 1rem;
 }
 
@@ -69,7 +72,8 @@
 }
 
 .emploi-thumb img {
-  width: 350px;
+  width: 153px;
+  height: 153px;
   vertical-align: middle;
   transition: 0.3s;
 }
@@ -134,24 +138,18 @@
 }
 
 @media screen and (max-width: 767px) {
-  .emploi {
-    padding-bottom: 2rem;
-  }
-
   .single-emploi {
-    width: 500px;
+    width: 153px;
+    height: 153px;
   }
 
   .row {
     grid-template-columns: 1fr;
   }
 
-  .column-emploi {
-    padding-bottom: 2rem;
-  }
-
   .emploi-thumb img {
-    width: 500px;
+    width: 153px;
+    height: 153px;
   }
 
   .more-emploi {
@@ -161,29 +159,35 @@
 
 @media screen and (max-width: 560px) {
   .single-emploi {
-    width: 450px;
+    width: 153px;
+    height: 153px;
   }
 
   .emploi-thumb img {
-    width: 450px;
-  }
-
-  .column-emploi {
-    padding-bottom: 1rem;
+    width: 153px;
+    height: 153px;
   }
 }
 
 @media screen and (max-width: 484px) {
-  .center h3 {
-    font-size: 35px;
+  .left-emploi h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .left-emploi span {
+    font-size: 14px;
+    font-weight: 700;
   }
 
   .single-emploi {
-    width: 400px;
+    width: 153px;
+    height: 153px;
   }
 
   .emploi-thumb img {
-    width: 400px;
+    width: 153px;
+    height: 153px;
   }
 
   .more-emploi .emploi-btn {
@@ -203,14 +207,19 @@
   }
 
   .column-emploi {
-    padding-left: 15px;
     padding-right: 15px;
   }
 }
 
 @media screen and (max-width: 383px) {
-  .emploi h3 {
-    font-size: 28px;
+  .left-emploi h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .left-emploi span {
+    font-size: 14px;
+    font-weight: 700;
   }
 
   .emploi-content h3 {
@@ -218,11 +227,13 @@
   }
 
   .single-emploi {
-    width: 300px;
+    width: 153px;
+    height: 153px;
   }
 
   .emploi-thumb img {
-    width: 300px;
+    width: 153px;
+    height: 153px;
   }
 
   .emploi-footer ul li span {
@@ -238,11 +249,13 @@
 
 @media screen and (max-width: 321px) {
   .single-emploi {
-    width: 270px;
+    width: 153px;
+    height: 153px;
   }
 
   .emploi-thumb img {
-    width: 270px;
+    width: 153px;
+    height: 153px;
   }
 
   .emploi-footer {
@@ -252,11 +265,13 @@
 
 @media screen and (max-width: 291px) {
   .single-emploi {
-    width: 230px;
+    width: 153px;
+    height: 153px;
   }
 
   .emploi-thumb img {
-    width: 230px;
+    width: 153px;
+    height: 153px;
   }
 
   .emploi-content {

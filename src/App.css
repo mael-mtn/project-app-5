@@ -6,7 +6,7 @@
 }
 
 .item {
-  min-height: 4rem;
+  min-height: 1rem;
   width: 10rem;
   padding: 15px;
 }
@@ -36,4 +36,42 @@
 .carousel {
   cursor: grab;
   overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.profil {
+  padding: 8rem 15px 0rem;
+  background: #2EC7D3;
+  border-radius: 0px 0px 25px 25px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #333333;
+}
+
+/* img de profil ronde */
+.circular--portrait {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+}
+
+
+.profil .presentation{
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+
+.profil .searchBar{
+  padding: 1.5rem 0;
 }

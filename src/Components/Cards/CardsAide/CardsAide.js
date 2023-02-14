@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from "react";
 import AideDetail from "../../../Utils/apis/AideDetail";
 import "./CardsAide.css";
+import Favoris from "../../Boutons/Favoris/Favoris";
 
 const CardsAide = () => {
   const [detail, setDetail] = useState(AideDetail);
@@ -8,11 +9,6 @@ const CardsAide = () => {
   return (
     <Fragment>
       <section className="aide">
-        <div className="center">
-          <h3>Aides</h3>
-          <span>Voir plus (nb)</span>
-        </div>
-
         <div className="row">
           {detail.map((detail) => {
             return (
@@ -20,7 +16,7 @@ const CardsAide = () => {
                 <div className="single-aide">
                   <div className="card">
                     <div className="aide-thumb">
-                      <div className="aide-tag">Icone Fav</div>
+                      <Favoris />
                       <img src={detail.Image} alt="Palace" width={"100%"} />
                     </div>
                     <div className="aide-content">

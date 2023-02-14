@@ -43,7 +43,8 @@ const EmploiDetail = [
   },
   {
     id: "7",
-    Image: "../../Images/Emploi/animation.jpg",
+    Image:
+      "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx2aXN1YWwtc2VhcmNofDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     title: "Animation",
     linkCat: "",
   },

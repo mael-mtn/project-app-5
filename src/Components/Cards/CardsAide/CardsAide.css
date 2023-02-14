@@ -1,18 +1,29 @@
 .aide {
-  padding-top: 9rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   display: grid;
   place-items: center;
 }
 
-.center h3 {
+.left-aide {
+  padding: 0rem 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-aide h3 {
   font-size: 42px;
   font-weight: 500;
   color: #001d38;
 }
 
+.left-aide span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .row {
-  padding-top: 4rem;
   display: flex;
   /* display: grid;
     grid-template-columns: 1fr 1fr 1fr; */
@@ -27,7 +38,6 @@
 }
 
 .column-aide {
-  padding-left: 1rem;
   padding-right: 1rem;
 }
 
@@ -80,7 +90,6 @@
   display: flex;
   justify-content: end;
 }
-
 
 .cat-aide {
   display: inline-block;
@@ -186,8 +195,9 @@
 }
 
 @media screen and (max-width: 483px) {
-  .center h3 {
-    font-size: 35px;
+  .left-aide h3 {
+    font-size: 20px;
+    font-weight: 700;
   }
 
   .single-aide {
@@ -216,14 +226,19 @@
   }
 
   .column-aide {
-    padding-left: 15px;
     padding-right: 15px;
   }
 }
 
 @media screen and (max-width: 383px) {
-  .aide h3 {
-    font-size: 28px;
+  .left-aide h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .left-aide span {
+    font-size: 14px;
+    font-weight: 700;
   }
 
   .aide-content h3 {
