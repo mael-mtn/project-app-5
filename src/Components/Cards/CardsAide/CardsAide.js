@@ -16,7 +16,7 @@ const CardsAide = () => {
         <div className="row">
           {detail.map((detail) => {
             return (
-              <div className="column">
+              <div className="column-aide">
                 <div className="single-aide">
                   <div className="card">
                     <div className="aide-thumb">

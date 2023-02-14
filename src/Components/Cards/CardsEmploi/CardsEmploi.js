@@ -11,7 +11,7 @@ const CardsEmploi = () => {
         <div className="row">
           {detail.map((detail) => {
             return (
-              <div className="column">
+              <div className="column-emploi">
                 <div className="single-emploi">
                   <div className="card">
                     <div className="emploi-thumb">

@@ -42,7 +42,7 @@
   background: #f9f9f9;
 }
 
-.column {
+.column-emploi {
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -78,39 +78,39 @@
   transform: scale(1.06);
 }
 
-.property-content h3 {
+.emploi-content h3 {
   margin-bottom: 8px;
   font-size: 16px;
   color: #001d38;
   font-weight: 500;
 }
 
-.property-footer {
+.emploi-footer {
   padding: 12px 25px;
 }
 
-.property-footer ul {
+.emploi-footer ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.property-footer ul li span {
+.emploi-footer ul li span {
   color: #001d38;
   font-size: 13px;
   font-weight: 400;
   margin-left: 5px;
 }
 
-.property-footer ul li img {
+.emploi-footer ul li img {
   width: 24px;
 }
 
-.more-property {
+.more-emploi {
   padding-top: 2rem;
 }
 
-.more-property .property-btn {
+.more-emploi .emploi-btn {
   padding: 14px 31px;
   display: inline-block;
   border-radius: 2rem;
@@ -122,7 +122,7 @@
   transition: 0.5s ease;
 }
 
-.more-property .property-btn:hover {
+.more-emploi .emploi-btn:hover {
   box-shadow: 0 0 40px 40px #fdae5c inset;
   color: #fff;
 }
@@ -134,7 +134,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .property {
+  .emploi {
     padding-bottom: 2rem;
   }
 
@@ -146,7 +146,7 @@
     grid-template-columns: 1fr;
   }
 
-  .column {
+  .column-emploi {
     padding-bottom: 2rem;
   }
 
@@ -154,7 +154,7 @@
     width: 500px;
   }
 
-  .more-property {
+  .more-emploi {
     padding-top: 0.5rem;
   }
 }
@@ -168,7 +168,7 @@
     width: 450px;
   }
 
-  .column {
+  .column-emploi {
     padding-bottom: 1rem;
   }
 }
@@ -186,7 +186,7 @@
     width: 400px;
   }
 
-  .more-property .property-btn {
+  .more-emploi .emploi-btn {
     padding: 12px 25px;
     font-size: 14px;
   }
@@ -202,18 +202,18 @@
     width: 153px;
   }
 
-  .column {
+  .column-emploi {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
 @media screen and (max-width: 383px) {
-  .property h3 {
+  .emploi h3 {
     font-size: 28px;
   }
 
-  .property-content h3 {
+  .emploi-content h3 {
     font-size: 14px;
   }
 
@@ -225,13 +225,13 @@
     width: 300px;
   }
 
-  .property-footer ul li span {
+  .emploi-footer ul li span {
     font-size: 10px;
     font-weight: 400;
     margin-left: 3px;
   }
 
-  .property-footer ul li img {
+  .emploi-footer ul li img {
     width: 14px;
   }
 }
@@ -245,7 +245,7 @@
     width: 270px;
   }
 
-  .property-footer {
+  .emploi-footer {
     padding: 12px 20px;
   }
 }
@@ -259,7 +259,7 @@
     width: 230px;
   }
 
-  .property-content {
+  .emploi-content {
     padding: 10px;
   }
 }

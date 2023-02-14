@@ -26,7 +26,7 @@
   overflow: hidden;
 }
 
-.column {
+.column-aide {
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -154,7 +154,7 @@
     grid-template-columns: 1fr;
   }
 
-  .column {
+  .column-aide {
     padding-bottom: 2rem;
   }
 
@@ -180,7 +180,7 @@
     width: 450px;
   }
 
-  .column {
+  .column-aide {
     padding-bottom: 1rem;
   }
 }
@@ -215,7 +215,7 @@
     height: 150px;
   }
 
-  .column {
+  .column-aide {
     padding-left: 15px;
     padding-right: 15px;
   }
