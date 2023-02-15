@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./NavBar.css";
 import logoMDS from "../../../Images/svg/logoMDS.svg";
-
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [showLinks, setShowLinks] = useState(false);
@@ -13,33 +13,32 @@ export default function NavBar() {
 
   return (
     <nav className={`navbar ${showLinks ? "showNav" : "hideNav"}`}>
-      <img src={logoMDS} alt=" logo MyDigitalSchool" width="100px" height={"50px"} />
+      <img
+        src={logoMDS}
+        alt=" logo MyDigitalSchool"
+        width="100px"
+        height={"50px"}
+      />
       <ul className="navbarLinks">
-        <li className="navbarItem">
-          <a href="/" className="navbarLink">
-            Accueil
-          </a>
-        </li>
-        <li className="navbarItem">
-          <a href="/" className="navbarLink">
-            Logements
-          </a>
-        </li>
-        <li className="navbarItem">
-          <a href="/" className="navbarLink">
-            Emplois
-          </a>
-        </li>
-        <li className="navbarItem">
-          <a href="/" className="navbarLink">
-            Aides
-          </a>
-        </li>
-        <li className="navbarItem">
-          <a href="/" className="navbarLink">
-            Profil
-          </a>
-        </li>
+        <Link to="/" className="navbarItem">
+          <li className="navbarLink">Accueil</li>
+        </Link>
+
+        <Link to="/logements" className="navbarItem">
+          <li className="navbarLink">Logement</li>
+        </Link>
+
+        <Link to="/emplois" className="navbarItem">
+          <li className="navbarLink">Emploi</li>
+        </Link>
+
+        <Link to="/aides" className="navbarItem">
+          <li className="navbarLink">Aide</li>
+        </Link>
+
+        <Link to="/profil" className="navbarItem">
+          <li className="navbarLink">Profil</li>
+        </Link>
       </ul>
       <button className="navbarBurger" onClick={handleShowLinks}>
         <span className="burger-bar"></span>

@@ -6,7 +6,7 @@
   position: fixed;
   width: 100%;
   min-height: 50px;
-  padding:  0.5rem 1rem;
+  padding: 0.5rem 1rem;
   background-color: #ffffff;
   color: aliceblue;
   z-index: 99999;
@@ -16,7 +16,7 @@
   display: flex;
 }
 
-.navbarLink {
+li .navbarLink {
   padding: 0 0.3rem;
   color: inherit;
 }
