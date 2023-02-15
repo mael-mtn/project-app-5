@@ -1,8 +1,7 @@
 import React from "react";
 import { Fragment } from "react";
 import "./ListeLogement.css";
-import Propert from "../../../Components/Cards/CardsLogement/Propert";
-
+import CardsListelogement from "../Components/CardsListe/CardsListelogement";
 function ListeLogement() {
   return (
     <Fragment>
@@ -47,7 +46,7 @@ function ListeLogement() {
           </div>
         </div>
 
-        <Propert />
+        <CardsListelogement />
       </section>
     </Fragment>
   );
