@@ -1,0 +1,35 @@
+.contact{
+    display: flex;
+    margin: 20px 0 26px;
+    padding: 15px 25px;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.contact .bailleur{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: 15px;
+}
+
+.contact .icones{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+
+.squar--portrait {
+  position: relative;
+  width: 39px;
+  height: 39px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.squar--portrait img {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,14 @@
+.detail-aides{
+    margin: 15px;
+}
+
+.Cat{
+    display: inline-block;
+    background: #00d363;
+    border-radius: 56px;
+    padding: 5px 11px;
+    color: #fff;
+    margin: 11px 0px;
+    font-size: 14px;
+    font-weight: 700;
+  }

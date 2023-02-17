@@ -1,0 +1,63 @@
+.details {
+  padding: 5.5rem 0px 0rem;
+}
+
+.details .property-tag {
+  position: absolute;
+  top: 6.5rem;
+  right: 15px;
+  background: rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.coordonnees {
+  margin: 20px 15px 25px;
+}
+
+.coordonnees-titre {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.coordonnees-info p {
+  font-family: "regular";
+  font-size: 14px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.contacts,
+.description,
+.localisation,
+.sliders {
+  margin: 0 15px 25px;
+}
+
+.description h3 {
+  margin-bottom: 1rem;
+}
+
+.details .description p {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "regular";
+}
+
+.sliders .slider-titre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sliders .slider-titre span {
+  font-size: 15px;
+  color: #333333;
+}
+
+.sliders .items{
+    width: 100%;
+}

@@ -1,0 +1,62 @@
+.recherche {
+  padding: 6.5rem 15px 1rem;
+  margin-bottom: 1rem;
+  background: #2ec7d3;
+  border-radius: 0px 0px 25px 25px;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-reglage {
+  background: #fff;
+  width: 43px;
+  height: 43px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.liste-aides .recherche .search {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+}
+
+#searchQueryInput {
+  width: 100%;
+  height: 43px;
+  background: #f5f5f5;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  padding-left: 15px;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+#searchQuerySubmit {
+  width: 3.5rem;
+  height: 2.8rem;
+  margin-left: -3.5rem;
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#searchQuerySubmit:hover {
+  cursor: pointer;
+}
+
+.liste-aides .titre-liste {
+  margin: 25px 15px 20px;
+  font-size: 24px;
+}

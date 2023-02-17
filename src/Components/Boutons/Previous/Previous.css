@@ -6,10 +6,11 @@ button {
   border-radius: 10px;
 }
 
-.property-tag {
+
+.previous-tag {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 6.5rem;
+  left: 15px;
   background: rgb(0 0 0 / 20%);
   border-radius: 10px;
   z-index: 1;
