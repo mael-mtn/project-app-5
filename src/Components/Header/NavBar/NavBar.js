@@ -28,7 +28,7 @@ export default function NavBar() {
           <li className="navbarLink">Logement</li>
         </Link>
 
-        <Link to="/emplois" className="navbarItem">
+        <Link to="/emplois-secteurs" className="navbarItem">
           <li className="navbarLink">Emploi</li>
         </Link>
 

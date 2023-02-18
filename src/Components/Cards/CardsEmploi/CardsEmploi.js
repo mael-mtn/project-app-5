@@ -1,4 +1,5 @@
 import { useState, Fragment } from "react";
+import { Link } from "react-router-dom";
 import EmploiDetail from "../../../Utils/apis/EmploiDetail";
 import "./CardsEmploi.css";
 
@@ -15,8 +16,10 @@ const CardsEmploi = () => {
                 <div className="single-emploi">
                   <div className="card">
                     <div className="emploi-thumb">
-                      <div className="emploi-tag">{detail.title}</div>
-                      <img src={detail.Image} alt="other" width={"100%"} />
+                      <Link to="/emplois-secteurs/emplois">
+                        <div className="emploi-tag">{detail.title}</div>
+                        <img src={detail.Image} alt="other" width={"100%"} />
+                      </Link>
                     </div>
                   </div>
                 </div>

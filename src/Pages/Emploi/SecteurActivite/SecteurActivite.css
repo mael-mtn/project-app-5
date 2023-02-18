@@ -1,0 +1,21 @@
+.liste-secteur{
+    padding: 6rem 15px;
+}
+
+.titre-secteur{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start ;
+    margin-bottom: 15px;
+}
+
+.liste-secteur .previous-tag{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 15px 0px;
+}
+
+.liste-secteur .row{
+    margin: 0;
+}
