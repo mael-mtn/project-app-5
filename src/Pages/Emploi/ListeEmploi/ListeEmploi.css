@@ -1,0 +1,11 @@
+.liste-emplois .recherche .search {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+  }
+
+  .liste-emplois .titre-liste {
+    margin: 25px 15px 20px;
+    font-size: 24px;
+  }

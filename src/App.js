@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import ListeLogement from "./Pages/Logement/ListeLogement/ListeLogement";
 import DetailLogement from "./Pages/Logement/DetailLogement/DetailLogement";
 import SecteurActivite from "./Pages/Emploi/SecteurActivite/SecteurActivite";
+import DetailEmploi from "./Pages/Emploi//DetailEmploi/DetailEmploi";
 import ListeEmploi from "./Pages/Emploi/ListeEmploi/ListeEmploi";
 import ListeAide from "./Pages/Aide/ListeAide/ListeAide";
 import DetailAide from "./Pages/Aide/DetailAide/DetailAide";
@@ -21,6 +22,7 @@ function App() {
         <Route path="/logements/logements-d" element={<DetailLogement />} />
         <Route path="/emplois-secteurs" element={<SecteurActivite />} />
         <Route path="/emplois-secteurs/emplois" element={<ListeEmploi />} />
+        <Route path="/emplois-secteurs/emplois/emplois-d" element={<DetailEmploi />} />
         <Route path="/aides" element={<ListeAide />} />
         <Route path="/aides/aides-d" element={<DetailAide />} />
         <Route path="/profil" element={<Profil />} />

@@ -1,0 +1,54 @@
+.liste-cards-emplois{
+display: flex;
+position: relative;
+background-color: #fff;
+border-radius: 10px;
+margin: 0 15px;
+margin-bottom: 15px;
+}
+
+
+.img-card-liste img{
+    border-radius: 10px;
+    margin-right: 1rem;
+}
+
+.liste-cards-emplois a{
+    display: flex;
+    align-items: center;
+}
+
+.content-card-liste{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 10px 10px 0;
+}
+
+.content-card-liste p,
+.content-card-liste span{
+    font-size: 15px;
+    font-family: "regular";
+    font-weight: 400;
+    color: black;
+}
+
+
+
+
+.footer-card-liste{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer-card-liste p{
+    font-size: 12px;
+}
+
+.liste-cards-emplois .property-tag{
+    top: 10px;
+    right: 10px;
+}

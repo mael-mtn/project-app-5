@@ -23,7 +23,7 @@ function Accueil() {
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzHQv_th9wq3ivQ1CVk7UZRxhbPq64oQrg5Q&usqp=CAU"
               width={"100%"}
               height={"100%"}
-              alt="sdv"
+              alt="photos de profil"
             />
           </div>
           <span className="name">Hello John !</span>

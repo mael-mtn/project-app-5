@@ -15,12 +15,12 @@ const CardsEmploi = () => {
               <div className="column-emploi">
                 <div className="single-emploi">
                   <div className="card">
-                    <div className="emploi-thumb">
-                      <Link to="/emplois-secteurs/emplois">
+                    <Link to="/emplois-secteurs/emplois">
+                      <div className="emploi-thumb">
                         <div className="emploi-tag">{detail.title}</div>
                         <img src={detail.Image} alt="other" width={"100%"} />
-                      </Link>
-                    </div>
+                      </div>
+                    </Link>
                   </div>
                 </div>
               </div>
