@@ -30,7 +30,6 @@ export default function ListeAide() {
               type="text"
               name="searchQueryInput"
               placeholder="Rechercher"
-              value=""
             />
             <button
               id="searchQuerySubmit"

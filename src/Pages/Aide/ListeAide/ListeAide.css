@@ -56,7 +56,11 @@
   cursor: pointer;
 }
 
-.liste-aides .titre-liste {
+.titre-liste {
   margin: 25px 15px 20px;
   font-size: 24px;
+}
+
+.liste-aides .row {
+  flex-wrap: wrap;
 }

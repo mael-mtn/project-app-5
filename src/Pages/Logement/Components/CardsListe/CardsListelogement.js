@@ -9,7 +9,7 @@ export default function CardsListelogement() {
 
   return (
     <Fragment>
-      <section className="property">
+      <div className="property">
         <div className="row">
           {detail.map((detail) => {
             return (
@@ -42,7 +42,7 @@ export default function CardsListelogement() {
             );
           })}
         </div>
-      </section>
+      </div>
     </Fragment>
   );
 }

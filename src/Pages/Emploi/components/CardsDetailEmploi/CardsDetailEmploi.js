@@ -4,8 +4,8 @@ import "./CardsDetailEmploi.css";
 const CardsDetailEmploi = () => {
   return (
     <Fragment>
-      <section className="emploi-detail">
-        <div className="row">
+
+
           <div className="column">
             <div className="single-emploi-detail">
               <div className="card">
@@ -25,8 +25,8 @@ const CardsDetailEmploi = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+
+
     </Fragment>
   );
 };

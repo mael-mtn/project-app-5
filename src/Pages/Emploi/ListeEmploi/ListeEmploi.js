@@ -28,7 +28,6 @@ export default function ListeEmploi() {
             type="text"
             name="searchQueryInput"
             placeholder="Rechercher"
-            value=""
           />
           <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
             <svg width={"25px"} height={"23px"} viewBox="0 0 24 24">

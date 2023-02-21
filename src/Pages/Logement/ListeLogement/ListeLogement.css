@@ -57,3 +57,7 @@
 }
 
 
+.liste-logement .row{
+  flex-direction: column;
+}
+

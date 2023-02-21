@@ -9,7 +9,7 @@ export default function SearchBar() {
           type="text"
           name="searchQueryInput"
           placeholder="Rechercher"
-          value=""
+          
         />
         <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
           <svg width={"24px"} height={"24px"} viewBox="0 0 24 24">

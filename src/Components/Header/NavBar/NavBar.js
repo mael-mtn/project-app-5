@@ -13,12 +13,14 @@ export default function NavBar() {
 
   return (
     <nav className={`navbar ${showLinks ? "showNav" : "hideNav"}`}>
-      <img
-        src={logoMDS}
-        alt=" logo MyDigitalSchool"
-        width="100px"
-        height={"50px"}
-      />
+      <Link to="/">
+        <img
+          src={logoMDS}
+          alt=" logo MyDigitalSchool"
+          width="100px"
+          height={"50px"}
+        />
+      </Link>
       <ul className="navbarLinks">
         <Link to="/" className="navbarItem">
           <li className="navbarLink">Accueil</li>

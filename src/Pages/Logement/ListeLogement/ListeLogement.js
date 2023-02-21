@@ -29,7 +29,6 @@ function ListeLogement() {
               type="text"
               name="searchQueryInput"
               placeholder="Rechercher"
-              value=""
             />
             <button
               id="searchQuerySubmit"
@@ -45,6 +44,8 @@ function ListeLogement() {
             </button>
           </div>
         </div>
+
+        <h3 className="titre-liste">Logements</h3>
 
         <CardsListelogement />
       </section>

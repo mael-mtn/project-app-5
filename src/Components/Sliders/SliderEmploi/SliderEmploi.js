@@ -1,7 +1,9 @@
 import React from "react";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import CardsDetailEmploi from "../../../Pages/Emploi/components/CardsDetailEmploi/CardsDetailEmploi";
+import { Link } from "react-router-dom";
+import CardsEmploi from "../../Cards/CardsEmploi/CardsEmploi";
+
 export default function SliderDetailLogement() {
   const [width, setWidth] = useState(0);
   const carousel = useRef();
@@ -16,24 +18,19 @@ export default function SliderDetailLogement() {
       className="carousel"
       whileTap={{ cursor: "grabbing" }}
     >
+      <div className="left-emploi">
+        <h3>Emplois</h3>
+        <Link to="/emplois-secteurs">
+          <span>Voir plus (nb)</span>
+        </Link>
+      </div>
       <motion.div
         drag="x"
         dragConstraints={{ right: 0, left: -width }}
         className="inner-Carousel"
       >
         <motion.div className="item">
-          <section className="emploi-detail">
-            <div className="row">
-              <CardsDetailEmploi />
-              <CardsDetailEmploi />
-              <CardsDetailEmploi />
-              <CardsDetailEmploi />
-              <CardsDetailEmploi />
-              <CardsDetailEmploi />
-              <CardsDetailEmploi />
-              <CardsDetailEmploi />
-            </div>
-          </section>
+          <CardsEmploi className="emploi" />
         </motion.div>
       </motion.div>
     </motion.div>

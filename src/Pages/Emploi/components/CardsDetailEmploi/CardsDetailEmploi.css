@@ -1,6 +1,7 @@
 .row {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   /* display: grid;
     grid-template-columns: 1fr 1fr 1fr; */
 }
@@ -53,7 +54,6 @@
 .emploi-detail-content {
   padding: 0px 25px 25px;
   border-bottom: 1px solid #e8e8e8;
-
 }
 
 .adress {
@@ -64,7 +64,6 @@
   font-family: "Regular";
 }
 
-
 .titre-info {
   margin: 4px 0px;
   display: block;
@@ -72,11 +71,12 @@
   font-weight: 700;
 }
 
-.info {
+.emploi-detail-content .info {
   display: block;
   padding: 5px 0;
   font-size: 14px;
   font-weight: 400;
+  font-family: "regular";
 }
 
 .emploi-detail-footer {

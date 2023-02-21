@@ -19,10 +19,12 @@
 .left span {
   font-size: 14px;
   font-weight: 700;
+  color: #333333;
 }
 
-.row {
+.property .row {
   display: flex;
+  flex-wrap: nowrap;
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr; */
 }

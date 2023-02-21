@@ -8,7 +8,7 @@ export default function SecteurActivite() {
     <section className="liste-secteur">
       <div className="titre-secteur">
         <Previous />
-        <h3 className="tamere">Secteurs d'activités</h3>
+        <h3 className="titre-liste">Secteurs d'activités</h3>
       </div>
 
         <CardsEmploi/>
