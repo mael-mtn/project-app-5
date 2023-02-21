@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 import Previous from "../../../Components/Boutons/Previous/Previous";
 import "./UpdateData.css";
 
@@ -107,8 +108,12 @@ export default function UpdateData() {
         </div>
 
         <div className="submit-update">
-          <button className="btn-primaire">Sauvegarder</button>
-          <button className="btn-tertiare">Annuler</button>
+          <Link to="/profil">
+            <button className="btn-primaire">Sauvegarder</button>
+          </Link>
+          <Link to="/profil">
+            <button className="btn-tertiare">Annuler</button>
+          </Link>
         </div>
       </form>
     </Fragment>

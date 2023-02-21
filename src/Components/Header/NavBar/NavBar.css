@@ -43,6 +43,7 @@ li .navbarLink {
     position: fixed;
     width: 0;
     right: -100vw;
+    top: 0;
     bottom: 0;
     height: 100vh;
     visibility: hidden;
@@ -52,6 +53,7 @@ li .navbarLink {
 
   .showNav .navbarLinks {
     width: 60vw;
+    top: 0;
     right: 0;
     visibility: visible;
   }
