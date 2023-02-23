@@ -1,0 +1,76 @@
+form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+
+.loginQueryInput {
+  width: 300px;
+  height: 2.8rem;
+  background: #f5f5f5;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  padding-left: 15px;
+  margin: 0.5rem 0;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.input-update {
+  display: flex;
+  align-items: center;
+}
+
+.signup {
+  margin-top: -2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup .conditions-input {
+  width: 17px;
+  height: 17px;
+  border: none;
+  border-radius: 5px;
+  margin: 1.5rem 0 0.5rem;
+  margin-right: 15px;
+}
+
+.signup .conditions {
+  display: inline-block;
+  width: 300px;
+  font-size: 14px;
+  margin: 1.5rem 0 0.5rem;
+}
+
+u {
+  color: #2ec7d3;
+}
+
+.authform {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login .forgot {
+  display: block;
+  width: 100%;
+  text-align: right;
+  font-size: 14px;
+  margin: 1rem 0;
+}
+
+.other-option {
+  text-decoration: underline;
+  font-size: 14px;
+}

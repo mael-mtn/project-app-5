@@ -13,13 +13,15 @@ import Profil from "./Pages/Profil/Profil";
 import UpdateData from "./Pages/Profil/UpdateData/UpdateData";
 import Accueil from "./Pages/Accueil/Accueil";
 import SettingProfil from "./Pages/Profil/SettingProfil/SettingProfil";
+import AuthForm from "./Pages/Auth/Connexion/AuthForm";
+import ForgotPassword from "./Pages/Auth/ForgotPassword/ForgotPassword";
 
 function App() {
   return (
     <Fragment>
       <Header />
       <Routes>
-        <Route path="/" element={<Accueil />} />
+        <Route path="/accueil" element={<Accueil />} />
         <Route path="/logements" element={<ListeLogement />} />
         <Route path="/logements/logements-d" element={<DetailLogement />} />
         <Route path="/emplois-secteurs" element={<SecteurActivite />} />
@@ -37,6 +39,8 @@ function App() {
         </Route>
         <Route path="/profil/update" element={<UpdateData />} />
         <Route path="/profil/settings" element={<SettingProfil />} />
+        <Route path="/" element={<AuthForm />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
       </Routes>
     </Fragment>
   );
