@@ -40,7 +40,7 @@
   background: #f9f9f9;
 }
 
-.column-emploi {
+.emploi .column-emploi{
   padding-right: 1rem;
 }
 
@@ -202,9 +202,7 @@
     width: 153px;
   }
 
-  .column-emploi {
-    padding-right: 15px;
-  }
+
 }
 
 @media screen and (max-width: 383px) {

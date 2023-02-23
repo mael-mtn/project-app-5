@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Fragment, useRef } from "react";
+import { Link } from "react-router-dom";
 import ErrorModal from "../components/ErrorModal/ErrorModal";
 import "./AuthForm.css";
 
@@ -121,7 +122,6 @@ export default function AuthForm() {
       {error && <ErrorModal message={error.message} onConfirm={errorHandler} />}
 
       <div className="authform">
-      
         <svg
           width="300"
           height="250"
@@ -257,7 +257,9 @@ export default function AuthForm() {
                   placeholder="Mot de passe"
                 />
               </div>
-              <span className="forgot">Mot de passe oublié ?</span>
+              <Link to="/forgot-password">
+                <span className="forgot">Mot de passe oublié ?</span>
+              </Link>
             </div>
           ) : (
             <div className="signup">
@@ -374,9 +376,19 @@ export default function AuthForm() {
             </div>
           )}
 
-          <button type="submit" onClick={() => {}} className="btn-primaire">
-            {isLogin ? "Se connecter" : "S'inscrire"}
-          </button>
+          {isLogin ? (
+            <Link to="/accueil">
+              <button type="submit" onClick={() => {}} className="btn-primaire">
+                Se connecter
+              </button>
+            </Link>
+          ) : (
+            <Link to="/">
+              <button type="submit" onClick={() => {}} className="btn-primaire">
+                S'incrire
+              </button>
+            </Link>
+          )}
 
           <span className="other-option" onClick={toggleAuthModeHandler}>
             {isLogin

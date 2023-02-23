@@ -20,3 +20,7 @@
     margin: 0;
     flex-wrap: wrap;
 }
+
+.liste-secteur .column-emploi{
+    padding-right: 0;
+}
