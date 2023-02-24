@@ -1,31 +1,28 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Previous from "../../../Components/Boutons/Previous/Previous";
 import "./SettingProfil.css";
 
 export default function SettingProfil() {
-
-
-  const [selected, setselected] =useState(null)
+  const [selected, setselected] = useState(null);
 
   const toggle = (i) => {
-    if(selected === i){
-        return setselected(null)
+    if (selected === i) {
+      return setselected(null);
     }
 
-    setselected(i)
-  }
-
+    setselected(i);
+  };
 
   return (
     <div className="wrapper">
       <div className="accordion">
+        <Previous />
+        <h3 className="titre">Réglage</h3>
 
-      <Previous />
-      <h3 className="titre">Réglage</h3>
-        
-      {data.map((itemSetting, i) => (
+        {data.map((itemSetting, i) => (
           <div className="item-setting">
-            <div className="titre-setting" onClick={() => toggle(i)} >
+            <div className="titre-setting" onClick={() => toggle(i)}>
               <h3>{itemSetting.title}</h3>
               <span className={`show${selected === i ? "-low" : "-more"}`}>
                 <svg
@@ -70,7 +67,7 @@ export default function SettingProfil() {
               </span>
             </div>
             <div className={`content-setting ${selected === i ? "show" : ""}`}>
-              <p>{itemSetting.subTitle}</p>
+              {itemSetting.subTitle}
             </div>
           </div>
         ))}
@@ -79,22 +76,25 @@ export default function SettingProfil() {
   );
 }
 
-
 const data = [
-    {
-      title: "Compte",
-      subTitle: "Change Password",
-    },
-    {
-      title: "Poilitique de Confidentialités",
-      subTitle: "En savoir plus",
-    },
-    {
-      title: "Termes et Conditions",
-      subTitle: "En savoir plus",
-    },
-    {
-      title: "Déconnection",
-      subTitle: "Se déconnecter",
-    },
-  ];
+  {
+    title: "Compte",
+    subTitle: <p>Changer de mot de passe</p>,
+  },
+  {
+    title: "Poilitique de Confidentialités",
+    subTitle: <p>En savoir plus</p>,
+  },
+  {
+    title: "Termes et Conditions",
+    subTitle: <p>En savoir plus</p>,
+  },
+  {
+    title: "Déconnection",
+    subTitle: (
+      <Link to="/">
+        <p className="logout">Se déconnecter</p>
+      </Link>
+    ),
+  },
+];
