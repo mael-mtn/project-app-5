@@ -33,9 +33,9 @@ function App() {
         <Route path="/aides" element={<ListeAide />} />
         <Route path="/aides/aides-d" element={<DetailAide />} />
         <Route path="/profil" element={<Profil />}>
-          <Route path="/profil-logements" element={<ListeLogement />} />
-          <Route path="/profil-emplois" element={<ListeEmploi />} />
-          <Route path="/profil-aides" element={<ListeAide />} />
+          <Route path="/profil/profil-logements" element={<ListeLogement />} />
+          <Route path="/profil/profil-emplois" element={<ListeEmploi />} />
+          <Route path="/profil/profil-aides" element={<ListeAide />} />
         </Route>
         <Route path="/profil/update" element={<UpdateData />} />
         <Route path="/profil/settings" element={<SettingProfil />} />

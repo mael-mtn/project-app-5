@@ -1,6 +1,6 @@
 import React from "react";
 import { Fragment, useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Profil.css";
 
 export default function Profil() {
@@ -8,16 +8,6 @@ export default function Profil() {
 
   const handleAddBlue = () => {
     setShowLinks(!showLinks);
-  };
-
-  const [selected, setselected] = useState(null);
-
-  const toggle = (i) => {
-    if (selected === i) {
-      return setselected(null);
-    }
-
-    setselected(i);
   };
 
   return (
@@ -35,6 +25,7 @@ export default function Profil() {
         <h3>John Williams</h3>
         <p>john.williams@gmail.com</p>
       </div>
+
       <div className="button">
         <Link to="/Profil/update">
           <button className="btn-primaire">Modifier</button>
@@ -43,6 +34,7 @@ export default function Profil() {
           <button className="btn-secondaire">Réglage</button>
         </Link>
       </div>
+
       <div className="wishlist">
         <div className="titre-wishlist">
           <svg
@@ -61,41 +53,27 @@ export default function Profil() {
           </svg>
           <h3>Favoris</h3>
         </div>
-
-        {data.map((wishlist, i) => (
-          <div className="wishlist-content">
-            <div onClick={() => toggle(i)}>
-              <Link to={`/profil/profil-${wishlist.btnTitle}`}>
-                <button
-                  onClick={handleAddBlue}
-                  className={`btn-portfolio${
-                    selected === i ? "-active" : "-inactive"
-                  }`}
-                >
-                  {wishlist.btnTitle}
-                </button>
-              </Link>
-              <div
-                className={`content-setting ${selected === i ? "show" : ""}`}
-              >
-                <Outlet />
-              </div>
-            </div>
-          </div>
-        ))}
+        <div className="button">
+          <button
+            onClick={handleAddBlue}
+            className={`btn-portfolio${showLinks ? "" : "-active"}`}
+          >
+            Logement
+          </button>
+          <button
+            onClick={handleAddBlue}
+            className={`btn-portfolio${showLinks ? "" : "-active"}`}
+          >
+            Emploi
+          </button>
+          <button
+            onClick={handleAddBlue}
+            className={`btn-portfolio${showLinks ? "" : "-active"}`}
+          >
+            Aide
+          </button>
+        </div>
       </div>
     </Fragment>
   );
 }
-
-const data = [
-  {
-    btnTitle: "logements",
-  },
-  {
-    btnTitle: "aides",
-  },
-  {
-    btnTitle: "emplois",
-  },
-];

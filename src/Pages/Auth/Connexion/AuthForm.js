@@ -13,9 +13,12 @@ export default function AuthForm() {
   const [error, setError] = useState(null);
 
   if (error) {
-    console.log("true");
+    console.log("il y a une erreur ?");
+    console.log("oui");
+    console.log(error);
   } else {
-    console.log("false");
+    console.log("il y a une erreur ?");
+    console.log("non");
   }
 
   const toggleAuthModeHandler = () => {
@@ -60,10 +63,10 @@ export default function AuthForm() {
     let url;
     if (isLogin) {
       // Lien qui me permettra de me connecter à l'api ou la bdd
-      url = "http://localhost/3000/api/authentification/login";
+      url = "https://mockend.com/mael-mtn/project-app-5/user";
     } else {
       // Lien qui me permettra d'enregistrer un compte sur l'api ou la bdd
-      url = "http://localhost/3000/api/authentification/login";
+      url = "https://mockend.com/mael-mtn/project-app-5/user";
     }
 
     // async await function fetchHandler
@@ -78,11 +81,15 @@ export default function AuthForm() {
           headers: {
             "content-Type": "application/json",
           },
-        });
+        })
+        console.log('try ok')
+        ;
 
         const dataResponse = await response.json();
         if (response.ok) {
           setData(dataResponse);
+          console.log('response de dataResponse -->');
+          console.log(dataResponse);
         } else {
           setError({
             title: "Echec de la connexion",
@@ -90,7 +97,7 @@ export default function AuthForm() {
           });
         }
 
-        // Gérer l'erreur du compte déjà existant pour l'afficher fans la modal ErreorModal
+        // Gérer l'erreur du compte déjà existant pour l'afficher dans la modal ErreorModal
         if (dataResponse && dataResponse.error) {
           setError({
             title: "Compte déjà existant",
@@ -98,18 +105,19 @@ export default function AuthForm() {
           });
         }
       } catch (error) {
+        console.log('le pb est dans le catch de gestion erreur doublons compte')
         console.log(error);
       }
     };
 
     fetchHandler();
 
-    console.log(data);
+
 
     //Pour vider les champs apres envoie
 
-    emailInputRef.current.value = "";
-    passwordInputRef.current.value = "";
+    // emailInputRef.current.value = "";
+    // passwordInputRef.current.value = "";
   };
 
   // Pour reset le state error
@@ -336,30 +344,6 @@ export default function AuthForm() {
               </div>
 
               <div className="input-update">
-                <svg
-                  width="20"
-                  height="24"
-                  viewBox="0 0 20 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.42857 6.75V9H13.5714V6.75C13.5714 4.67812 11.9732 3 10 3C8.02679 3 6.42857 4.67812 6.42857 6.75ZM3.57143 9V6.75C3.57143 3.02344 6.45089 0 10 0C13.5491 0 16.4286 3.02344 16.4286 6.75V9H17.1429C18.7188 9 20 10.3453 20 12V21C20 22.6547 18.7188 24 17.1429 24H2.85714C1.28125 24 0 22.6547 0 21V12C0 10.3453 1.28125 9 2.85714 9H3.57143Z"
-                    fill="black"
-                  />
-                </svg>
-
-                <input
-                  className="loginQueryInput"
-                  id="password"
-                  type="text"
-                  name="loginQueryInput"
-                  ref={passwordInputRef}
-                  placeholder="Mot de passe"
-                />
-              </div>
-
-              <div className="input-update">
                 <input
                   className="conditions-input"
                   id="password"
@@ -377,17 +361,13 @@ export default function AuthForm() {
           )}
 
           {isLogin ? (
-            <Link to="/accueil">
-              <button type="submit" onClick={() => {}} className="btn-primaire">
-                Se connecter
-              </button>
-            </Link>
+            <button type="submit" onClick={() => {}} className="btn-primaire">
+              <Link to={error ? "/" : "/"}>Se connecter</Link>
+            </button>
           ) : (
-            <Link to="/">
-              <button type="submit" onClick={() => {}} className="btn-primaire">
-                S'incrire
-              </button>
-            </Link>
+            <button type="submit" onClick={() => {}} className="btn-primaire">
+              <Link to="/">S'incrire</Link>
+            </button>
           )}
 
           <span className="other-option" onClick={toggleAuthModeHandler}>

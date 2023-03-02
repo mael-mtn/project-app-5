@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "test@test.com",
+      "password": "azertyAZERTY",
+      "name": "Sebastien Dufour"
+    },
+    {
+      "id": 2,
+      "email": "user@user.fr",
+      "password": "passwordUser",
+      "name": "Arthur Lemoine"
+    },
+    {
+      "id": 3,
+      "email": "mon@mail.com",
+      "password": "password",
+      "name": "Kevin Balour"
+    }
+  ]
+}

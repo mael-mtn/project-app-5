@@ -59,5 +59,11 @@
 
 .liste-logement .row{
   flex-direction: column;
+
 }
+
+.liste-logement .column{
+  padding: 0;
+}
+
 

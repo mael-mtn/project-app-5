@@ -75,3 +75,8 @@ u {
   text-decoration: underline;
   font-size: 14px;
 }
+
+button a{
+  font-size: 20px;
+  display: inline;
+}
