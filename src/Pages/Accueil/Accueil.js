@@ -1,5 +1,5 @@
 import "./Accueil.css";
-import { useState, useRef, useEffect, Fragment } from "react";
+import { Fragment } from "react";
 import SliderLogement from "../../Components/Sliders/SliderLogement/SliderLogement";
 import SliderEmploi from "../../Components/Sliders/SliderEmploi/SliderEmploi";
 import SliderAide from "../../Components/Sliders/SliderAide/SliderAide";

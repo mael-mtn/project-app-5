@@ -1,9 +1,17 @@
 import React from "react";
 import "./Previous.css";
+import {useNavigate} from 'react-router-dom';
 
 export default function Previous() {
+
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate(-1);
+  }
+
+
   return (
-    <button className="previous-tag">
+    <button className="previous-tag" onClick={goBack}>
       <svg
         width="23"
         height="23"
@@ -19,3 +27,4 @@ export default function Previous() {
     </button>
   );
 }
+
