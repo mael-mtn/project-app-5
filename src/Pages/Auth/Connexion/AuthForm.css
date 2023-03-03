@@ -60,6 +60,9 @@ u {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 99999;
+  background-color: #f2f2f2;
+  position: relative;
 }
 
 .login .forgot {

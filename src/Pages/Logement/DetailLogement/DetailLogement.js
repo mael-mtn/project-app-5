@@ -69,7 +69,7 @@ export default function DetailLogement() {
 
         <div className="localisation">
           <h3>Où se situe le logement</h3>
-          <p>maps du logement</p>
+          <p className="maps">maps du logement</p>
         </div>
 
         <div className="sliders">

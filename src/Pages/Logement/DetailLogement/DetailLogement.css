@@ -47,6 +47,12 @@ h3 {
   font-family: "regular";
 }
 
+.maps {
+  text-align: center;
+  margin: 3rem;
+  opacity: 0.5;
+}
+
 .sliders .slider-titre {
   display: flex;
   justify-content: space-between;
