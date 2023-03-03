@@ -7,6 +7,7 @@ import Favoris from "../../Boutons/Favoris/Favoris";
 const Propert = () => {
   const [detail, setDetail] = useState(PropertyDetail);
 
+
   return (
     <Fragment>
       <section className="property">

@@ -62,25 +62,27 @@ export default function Profil() {
           <h3>Favoris</h3>
         </div>
 
-        <div className="wishlist-btn">
-          {data.map((wishlist, i) => (
+        {data.map((wishlist, i) => (
+          <div className="wishlist-content">
             <div onClick={() => toggle(i)}>
               <Link to={`/profil/profil-${wishlist.btnTitle}`}>
                 <button
                   onClick={handleAddBlue}
                   className={`btn-portfolio${
-                    selected === i ? "-active" : ""
+                    selected === i ? "-active" : "-inactive"
                   }`}
                 >
                   {wishlist.btnTitle}
                 </button>
               </Link>
+              <div
+                className={`content-setting ${selected === i ? "show" : ""}`}
+              >
+                <Outlet />
+              </div>
             </div>
-          ))}
-        </div>
-        <div className={`content-setting ${selected ? "show" : ""}`}>
-          <Outlet />
-        </div>
+          </div>
+        ))}
       </div>
     </Fragment>
   );

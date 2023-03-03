@@ -21,7 +21,7 @@ export default function SliderDetailLogement() {
       <div className="left-emploi">
         <h3>Emplois</h3>
         <Link to="/emplois-secteurs">
-          <span>Voir plus (nb)</span>
+          <span>Voir plus (7)</span>
         </Link>
       </div>
       <motion.div

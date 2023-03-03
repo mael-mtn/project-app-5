@@ -63,7 +63,7 @@
   font-size: 20px;
 }
 
-.wishlist .btn-portfolio-inactive {
+.wishlist .btn-portfolio {
   width: 107px;
   height: 31px;
   background: #d9d9d9;
@@ -72,7 +72,7 @@
   font-family: "Ubuntu Mono", monospace;
 }
 
-.wishlist .btn-portfolio-active00 {
+.wishlist .btn-portfolio-active {
   width: 107px;
   height: 31px;
   background: #2ec7d3;
@@ -81,7 +81,13 @@
   font-family: "Ubuntu Mono", monospace;
 }
 
-.wishlist-content .content-setting .recherche,
-.wishlist-content .content-setting .titre-liste {
+.wishlist .content-setting .recherche,
+.wishlist .content-setting .titre-liste {
   display: none;
+}
+
+.wishlist-btn{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
 }

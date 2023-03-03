@@ -21,7 +21,7 @@ export default function SliderDetailLogement() {
       <div className="left-aide">
         <h3>Aides</h3>
         <Link to="/aides">
-          <span>Voir plus (nb)</span>
+          <span>Voir plus (7)</span>
         </Link>
       </div>
       <motion.div
